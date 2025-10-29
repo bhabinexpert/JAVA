@@ -6,6 +6,12 @@ public class Variable {
         int b = 45;
         int sum = a + b;
 
+        int diff = b - a;
+
+        int multiply = a * b ;
+
         System.out.println(sum);
+        System.out.println(diff);
+        System.out.println(multiply);
     }
 }
