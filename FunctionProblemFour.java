@@ -9,6 +9,10 @@ public class FunctionProblemFour {
         }
     }
 
+    public static void circumference(float a){
+        float circumference = (float) (2 * 3.14 * a);
+        System.out.println("The circumference is " + circumference);
+    }
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -16,8 +20,12 @@ public class FunctionProblemFour {
         int a = input.nextInt();
         System.out.print("Enter the second number: ");
         int b = input.nextInt();
-
-
         checkGraterNumber(a,b);
+
+        System.out.print("Enter the radius of the Circle:");
+        float radius = input.nextFloat();
+
+
+        circumference(radius);
     }
 }
