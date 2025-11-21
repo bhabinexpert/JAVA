@@ -1,10 +1,15 @@
 public class ReverseStringRecursion {
-    public static String reverse(String str) {
-        if (str.isEmpty()) return str;
-        return reverse(str.substring(1)) + str.charAt(0);
+    public static void reverse(String str, int index) {
+        if(index == 0){
+            System.out.println(str.charAt(index));
+            return;
+        }
+        System.out.print(str.charAt(index));
+        reverse(str,index-1);
     }
 
     public static void main(String[] args) {
-        System.out.println(reverse("hello"));
+        String str = "abcde";
+       reverse(str,str.length()-1);
     }
 }
